@@ -19,6 +19,8 @@ rack-saml uses external libraries to generate and validate SAML AuthnRequest/Res
 
 ### AuthnRequest Signing and Response Encryption
 
+This fork keeps `ruby-saml` gem up-to-date and is compatible with Ruby 3.2
+
 Current implementation supports only Onelogin SAML assertion handler. It does not support to sign AuthnRequest and encrypt Response. So thus, the assertion encription function should be disabled at IdP side for rack-saml SPs.
 
 ## Getting Started
