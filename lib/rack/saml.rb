@@ -51,7 +51,7 @@ module Rack
     end
 
     def load_file(type)
-      if @opts[type].nil? || !::File.exists?(@opts[type])
+      if @opts[type].nil? || !::File.exist?(@opts[type])
         @opts[type] = default_config_path(FILE_NAME[type])
       end
       eval "@#{type} = YAML.load_file(@opts[:#{type}])"
